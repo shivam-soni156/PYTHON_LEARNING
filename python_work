@@ -1,0 +1,2551 @@
+
+#1. variables
+# msg1="hello python world"
+# print(msg1)
+
+# msg1="hi from world"
+# print(msg1)
+
+
+#2. strings
+
+# name="ada lovelace"
+# print(name.title())
+# print(name.upper())
+# print(name.lower())
+
+# first_name="ada"
+# last_name="lovelace"
+
+# full_name=f"{first_name} {last_name}"
+# print(full_name)
+
+# print(f"hello, {full_name.title()}")
+
+# rep_msg=f"hi to, {full_name.title()}"
+# print(rep_msg)
+
+# #adding spaces and new lines to strings
+# print("hello world\nhi from world\nhow are you")
+
+
+#3. Stripping Whitespaces
+
+# fav_lan=' python '
+# print(fav_lan.rstrip())
+# print(fav_lan.lstrip())
+# print(fav_lan.strip())
+
+
+
+# msg="this is sam's book"
+# print(msg)
+
+# per_msg="eric"
+# print(f"Hello {per_msg.title()}, would you like to learn some Python today?")
+
+# print(per_msg.lower())
+# print(per_msg.upper())
+# print(per_msg.title())
+
+# print('Albert Einstein once said, “A person who never made a mistake never tried anything new.”')
+
+# print('Albert Einstein once said, “A person who never made a mistake never tried anything new.”')
+
+# famous_person="Albert Einstein"
+
+# msg=f"{famous_person} {'once said, “A person who never made a mistake never tried anything new.”'}"
+
+# print(msg)
+
+
+#Numbers::::
+
+
+# print(2+3)
+# print(3/2)
+# print(3**2)
+
+# print(2+3*4)
+# print((2+3)*4)
+
+# print(4/2)
+
+# universe_age=14_000_000_000
+# print(universe_age)
+
+# x,y,z=45,5,3
+# print(x,y,z)
+
+
+# print(3+5)
+# print(10-2)
+# print(4*2)
+# print(16/2)
+
+# fav_num=321
+# print(f"favourite number is {fav_num}")
+
+
+
+### List ### 
+
+# names=['train','bus','car','bikes','cycles']
+# print(names)
+
+# print(names[2])
+# print(names[2].title())
+
+# print(names[-1])
+
+# msg=f"we have {names[-2].title()} for the bikers in Ladakh."
+# print(msg)
+
+
+# frnds=['ram','shyam','ritik','aman']
+# print(frnds[0])
+# print(frnds[1])
+# print(frnds[2])
+# print(frnds[3])
+
+# msg="well played."
+
+# print(f"{frnds[0].title()} {msg}")
+# print(f"{frnds[1].title()} {msg}")
+# print(f"{frnds[2].title()} {msg}")
+# print(f"{frnds[3].title()} {msg}")
+
+
+#modifying elements in a list
+
+# bikes=['pulsar','honda','apache','splender','hero']
+# print(bikes)
+# bikes[0]='ducati'
+
+# print(bikes)
+
+#adding element in a list
+
+# bikes.append('pulsar')    this will add the element at the end of the list
+# print(bikes)
+
+# bikes.insert(2,'suzuki')  this will insert the element at 2 position
+# print(bikes)
+
+# bikes2=['ducati','hero','rajdoot']
+# bikes.extend(bikes2)   this will add the elements to bikes2 list in the bikes list and if we use "append()" here then it will add the bike2 list directly as an element in the bike list
+# print(bikes)
+
+
+# del bikes[0]
+# print(bikes)
+
+# popped_element=bikes.pop()
+# print(popped_element)
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+#popping items from any position
+
+# bikes=['pulsar','honda','apache','splender','hero']
+# print(bikes)
+# first_owned=bikes.pop(0)
+# print(first_owned)
+
+# second_owned=bikes.pop(1)
+# print(second_owned)
+
+
+#removing an item by value 
+
+# rem_element='splender'
+# bikes.remove(rem_element)
+# print(bikes)
+
+# print(f"\nA {rem_element.title()} is very old now.")
+
+# invite_list=['ram','sam','tom']
+# print(invite_list)
+
+# msg="you are heartfully invited for the dinner tonight I found a bigger dinner table."
+
+# print(f"{invite_list[0].title()}, {msg}")
+# print(f"{invite_list[1].title()}, {msg}")
+# print(f"{invite_list[2].title()}, {msg}")
+
+# rep_guest=invite_list.pop(1)
+# print(f"{rep_guest.title()} is not comming due to their personal reason.")
+
+# invite_list.insert(1,'jerry')
+
+# print(invite_list)
+
+# print(f"{invite_list[0].title()}, {msg}")
+# print(f"{invite_list[1].title()}, {msg}")
+# print(f"{invite_list[2].title()}, {msg}")
+
+
+# invite_list.insert(0,'karn')
+# invite_list.insert(2,'jaffry')
+# invite_list.append('raman')
+
+# print(invite_list)
+
+# print(f"{invite_list[0].title()}, {msg}")
+# print(f"{invite_list[1].title()}, {msg}")
+# print(f"{invite_list[2].title()}, {msg}")
+# print(f"{invite_list[3].title()}, {msg}")
+# print(f"{invite_list[4].title()}, {msg}")
+# print(f"{invite_list[5].title()}, {msg}")
+
+# print(f"{invite_list[6].title()}, {msg}")
+
+# msg2="dinner table won’t arrive in time for the dinner, Sorry! for that we will do it later.."
+# pop1=invite_list.pop(0)
+# pop2=invite_list.pop(1)
+# pop3=invite_list.pop(2)
+
+# print(f"{pop1.title()}, {msg2}")
+# print(f"{pop2.title()}, {msg2}")
+# print(f"{pop3.title()}, {msg2}")
+
+
+
+###organisizing a list
+
+# cars=['bmw','audi','toyota','subaru']
+# print(cars)
+
+# cars.sort()  this will sort the list permanently
+# print(cars)
+
+# cars.sort(reverse=True)
+# print(cars)
+
+# print(sorted(cars))  this will sort the list temporarily
+# print(cars)
+
+# print(sorted(cars,reverse=True))
+
+# cars.reverse()   this will reverse the given list permanently
+# print(cars)
+
+# print(len(cars))
+
+
+
+# li=['jaipur','udaipur','mount','sikar']
+# print(li)
+# print(sorted(li))
+# print(li)
+
+# print(sorted(li,reverse=True))
+
+# li.reverse()
+# print(li)
+# li.reverse()
+# print(li)
+
+# li.sort()
+# print(li)
+
+# li.sort(reverse=True)
+# print(li)
+# print(len(li))
+
+
+
+###for loop in List:::::::::::::
+
+# magicians=['alice','david','carlonia']
+# for magician in magicians:
+#     print(magician)
+
+
+# for magician in magicians:
+#     print(f"{magician.title()}, that was a great trick!")
+#     print(f"I can't wait to see your next trick, {magician.title()}!\n")
+# print("Thank you, everyone. That was a great magic show!")
+
+
+# pizza_list=['corn','paneer','capsicum']
+# for pizza in pizza_list:
+#     print(f"I like {pizza.title()} pizza.")
+
+# print("I like all these types of pizza.")
+
+ 
+###making numerical Lists:::::::::
+
+
+# for value in range(1,5):
+#     print(value)
+ 
+# for value in range(5):
+#     print(value)
+
+
+
+# numbers=list(range(1,6))
+# print(numbers)
+
+# even_num=list(range(2,11,2))
+# print("even number list::",even_num)
+# odd_num=list(range(1,11,2))
+# print("odd number list::",odd_num)
+
+
+#question-1::  make a list of the first 10 square numbers
+
+# squ_num=[]
+# for num in range(1,11):
+#     square=num**2
+#     squ_num.append(square)
+# print(squ_num)    
+ 
+# square=[]
+# for i in range(1,11):
+#     square.append(i**2)
+# print(square)    
+
+
+# print(min(square))
+# print(max(square))
+# print(sum(square))
+
+# squares=[value**2 for value in range(1,11)]   this is list comprehension
+# print(squares)
+
+# for i in range(1,21):
+#     print(i)
+
+# million_list=list(range(1,100001))
+# # print(million_list)
+# print(min(million_list))
+# print(max(million_list))
+# print(sum(million_list))
+
+# odd_num=list(range(1,21,2))
+# print(odd_num)
+
+# mul_3=[]
+# for i in range(3,31,3):
+#     mul_3.append(i)
+# print(mul_3)
+
+# cube=[]
+# for i in range(1,11):
+#     cube.append(i**3)
+# print(cube)  
+
+# cubes=[value**3 for value in range(1,11)]
+# print(cubes)
+
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+##slicing a list:::::
+
+# players=['charles','martina','michale','florence','eli']
+# print(players[0:3])
+# print(players[1:4])
+
+# print(players[:4])
+
+# print(players[3:])
+# print(players[-2:])
+# print(players[0:5:2])
+
+#looping through a slice
+
+# for player in players[:3]:
+#     print(player.title())
+
+# copy_players=players[:]
+# print(copy_players)
+
+# players=['charles','martina','michale','florence','eli']
+
+# print("the first three items in the list are::\n",players[0:3])
+# print("three items from middle of the list are::\n",players[1:4])
+
+# print("the last three items in the list are::\n",players[-3:])
+
+
+# players=['charles','martina','michale','florence','eli']
+
+# length=len(players)
+# print(length)
+
+# count=0;
+
+# while count!=length:
+#     print(players[count])
+#     count=count+1
+
+# for index,player in enumerate(players):   if we want to deal with indexes in the list
+#     print(index,player)
+
+
+# numbers=[1,2,3,4,5]
+
+# for i in range(len(numbers)):
+#     numbers[i]=numbers[i]*2
+# print(numbers)    
+
+# for n in numbers:
+#     if n%2==0:
+#         print(n,"is even")
+
+
+# nums=[1,2,4,5,7,8,9,3,11,22,33]
+
+# for i in nums:
+#     if(i>5):
+#         print(i)
+    
+    
+##trying some basic questions of List :::::::   
+    
+#1>. print all elements:: 
+# nums=[10,20,30,40]
+# for num in nums:
+#     print(num)
+
+#-----------------------------
+#-----------------------------
+
+#2>. print elements with index::
+# nums=[10,20,30,40]
+# for index,num in enumerate(nums):
+#     print(f"{index}->{num}")
+
+#-----------------------------
+#-----------------------------
+
+#3>.Find length of list (without using len() )
+# nums=[10,20,30,40]
+# length=0
+
+# for i in nums:
+#     length=length+1
+# print("length of the list is::",length)    
+
+
+#-----------------------------
+#-----------------------------
+
+
+#4>.Print list in reverse order::
+# nums=[10,20,30,40]
+# rev_nums=[]
+# length=len(nums)
+# i=1
+# while i<=length:
+#     rev_nums.append(nums[length-i])
+#     i+=1    
+# print(rev_nums)    
+
+### Method-2::::
+# i=len(nums)-1
+# while i>=0:
+#     rev_nums.append(nums[i])
+#     i=i-1
+# print(rev_nums)    
+    
+  
+#-----------------------------
+#-----------------------------
+    
+
+#5>.Count even and odd numbers::
+# nums=[1,4,7,8,10]
+# even,odd=0,0
+# for i in nums:
+#     if i%2==0:
+#         even+=1
+#     else:
+#         odd+=1
+# print("even::",even,"\nodd::",odd) 
+
+
+#-----------------------------
+#-----------------------------
+
+
+#6>.Find sum of all elements::
+# nums=[1,2,3,4,5]
+# total=0
+
+# for i in nums:
+#     total=total+i
+# print("total is::",total)    
+
+
+#-----------------------------
+#-----------------------------
+
+
+#7>.Find maximum element::
+# numbers=[3,4,6,9,8,1,2,5]
+
+# #Method-1::::
+# numbers.sort()
+# print("maximum number is::",numbers[-1])
+
+# #Method-2::::
+# max_num=numbers[0]
+# for i in numbers:
+#     if i>max_num:
+#         max_num=i
+# print("maximum number is::",max_num)
+
+
+#-----------------------------
+#-----------------------------
+
+
+#8>.Find minimum element::
+# numbers=[3,4,6,9,8,1,2,5]
+
+# Method-1::::
+# numbers.sort()
+# print("minimum numbers is::",numbers[0])
+
+# #Method-2::::
+# min_num=numbers[0]
+
+# for i in numbers:
+#     if i<min_num:
+#         min_num=i
+# print("minimum number is::",min_num)        
+
+
+#-----------------------------
+#-----------------------------
+
+
+#9>.Remove duplicates from list::
+# nums=[1,2,2,3,4,4,5]
+# rem_dup=[]
+
+# ##Method-1::
+# i=0;
+# while i<len(nums):
+#     if nums[i] not in rem_dup:
+#         rem_dup.append(nums[i])
+#     i+=1    
+# print(rem_dup)    
+
+# ##Method-2::::
+# for value in nums:
+#     if value not in rem_dup:
+#         rem_dup.append(value)
+# print(rem_dup)   
+
+
+#-----------------------------
+#-----------------------------
+    
+
+#10>.Find second largest element::
+
+#FOR edge cases this code fails, go with Method-2
+
+#nums=[5,5,4]   for this list the code will fail
+# nums=[3,3,2,1]  #same here the code will fail 
+# max1=nums[0]
+# max2=nums[1]
+# for value in nums:
+#     if value > max1:
+#         max2=max1
+#         max1=value
+#     elif value > max2 and value!=max1:
+#         max2=value
+# print(max1,max2)        
+
+#Method-2 which works well with all the edge cases
+# nums=[3,3,2,1,4,5]
+
+# if len(nums)<2:
+#     print("no second max exists")
+# else:
+#     max1=max2=float('-inf')
+    
+#     for value in nums:
+#         if value>max1:
+#             max2=max1
+#             max1=value
+#         elif value!=max1 and value>max2:
+#             max2=value
+    
+#     if max2==float('-inf'):
+#         print("second max not found")
+#     else:
+#         print("second max:",max2)
+
+
+#-----------------------------
+#-----------------------------
+
+
+#11>.Check if list is sorted or not 
+# nums=[9,1,2,3,4,6,7,8]
+
+# issorted=1
+# for i in range(len(nums)-1):
+#     if nums[i]>nums[i+1]:
+#         issorted=0
+#         break
+# if issorted==1:
+#     print("list is sorted")
+# else:
+#     print("list is not sorted")
+
+
+#-----------------------------
+#-----------------------------
+
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+# courses=['history','maths','science','gk']
+
+# print('hindi' in courses)    this will check the element is in courses list or not.
+# print(courses.index('science'))  this will give the indeix of element from the list.
+
+
+# courses=['history','maths','science','gk']
+
+# for index,course in enumerate(courses,start=1):  this start=1 in the enumerate() fun
+#     print(index,course)                          starts the indexing from 1 and by default
+#                                                  the indexing starts from 0.
+    
+
+# #convert the list in to string seperated by ',' or any other character::
+# courses=['history','maths','science','gk']
+
+# course_str=', '.join(courses)
+# print("string version seperated by comma:",course_str)
+
+# course_str2=' - '.join(courses)
+# print("string version seperated by hyphen(-):",course_str2)
+
+
+# #and we can again convert the string into list by using split()::
+
+# new_list=course_str2.split(' - ') this will split the string from hyphen(-) and make
+# print(new_list)                   a list. 
+
+
+
+### Tuple ###
+
+# tuple_1=('history','maths','gk','english','science')
+# print(tuple_1)
+# print(type(tuple_1))
+
+##tuples are immutable means we can't change the elements of tuple so that's why like
+##lists it doesn't have many function to process.
+
+
+# tuple_1=(3)            this is not a tuple beacuse technically it takes comma to make a tuple
+# print(type(tuple_1))   but here this is an int .
+
+# tuple_1=(3,)   #now tuple is made with one element in it
+# print(tuple_1)
+
+
+#looping through all values in a tuple:
+
+# dimensions=(200,50)
+# for side in dimensions:
+#     print(side)
+
+# dimensions=(400,100)
+# for side in dimensions:
+#     print(side)
+
+# food_tuple=('pasta','noodles','pizza','soup','rice')
+# for food in food_tuple:
+#     print(food)
+    
+# food_tuple[0]='maggie'
+# print(food_tuple)
+
+# food_tuple2=('pasta','idli','pizza','soup','dosa')
+# for food in food_tuple2:
+#     print(food)
+
+
+### if statements ###
+
+# cars=['audi','bmw','subaru','toyata']
+# for car in cars:
+#     if car == 'bmw':
+#         print(car.upper())
+#     else:
+#         print(car.title())
+
+# car='Audi'
+# print(car.lower()=='audi')
+
+# age1=22
+# age2=18
+# print(age1>=21 and age2>=21)
+
+# req_toppings=['mashrooms','onions','pineapple']
+# print('mashrooms' in req_toppings)
+# print('pepperoni' in req_toppings)
+
+# print('strawberry' not in req_toppings)
+
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+# banned_users=['andrew','carolina','david']
+# user='marie'
+
+# if user not in banned_users:
+#     print(f"{user.title()}, you can post a response if you wish.")
+
+
+#if statements:::
+
+# age=12
+
+# if age<4:
+#     print("admission cost is $0")
+# elif age<18:
+#     print("your admission cost is $25")
+# else:
+#     print("admission cost is $45")
+
+# alien_color='yellow'
+# if alien_color=='green':
+#     print("you got 5 points")
+# elif alien_color=='yellow':
+#     print("you got 10 points")
+# else:
+#     print("you got 15 points")
+    
+
+# age=66
+# if age<2:
+#     print("person is a baby")
+# elif age<4:
+#     print("person is a toddler")
+# elif age<13:
+#     print("person is a kid")
+# elif age<20:
+#     print("person is a teenager")
+# elif age<65:
+#     print("person is an adult")
+# else:
+#     print("person is an elder")
+    
+
+# fruits=['apple','mango','orange']
+
+# if 'banana' in fruits:
+#     print("you really like banana")
+# elif 'orange' in fruits:
+#     print("you really like orange")
+
+
+# req_topping=['mushrooms','green peppers','extra cheese']
+
+# for request in req_topping:
+#     if request=='green peppers':
+#         print("sorry, we are out of the green peppers now.")
+#     else:
+#         print(f"adding {request}")
+
+# print("finished making pizza")        
+
+#check list is empty or not:::
+# req_toppings=[]
+
+# if req_toppings:
+#     print("not empty")
+# else:
+#     print("empty list")
+
+
+
+# available_toppings=['mushrooms','olives','green peppers','pepperoni','pineapple',
+# 'extra cheese']
+
+# requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+
+# for requested_topping in requested_toppings:
+#     if requested_topping in available_toppings:
+#         print(f"adding {requested_topping}")
+#     else:
+#         print(f"sorry, we don't have {requested_topping}")
+        
+# print("finsihed making pizza")
+    
+
+# user_name=['tom','karn','kim','sam','admin','alice']
+
+# if user_name:
+#     for user in user_name:
+#         if user=='admin':
+#             print("hello admin,would you like to see a status report?")
+#         else:
+#             print(f"hello {user}, thank you for logging in again")
+# else:
+#     print("empty list")
+
+    
+# current_users=['tom','karn','kim','sam','admin','alice']    
+
+# new_users=['ram','andrew','KIM','faf','Alice','rahul']
+
+# for user in new_users:
+#     if user.lower() in current_users:
+#         print(f"{user}, hi happy to see you again! but you need to make a new username")
+#     else:
+#         print(f"{user}, hi please make your new password")
+        
+
+
+# nums=[1,2,3,4,5,6,7,8,9]
+
+# for n in nums:
+#     if n in [4,5,6,7,8,9]:
+#         print(f"{n}th")
+#     elif n==1:
+#         print(f"{n}st");
+#     elif n==2:
+#         print(f"{n}nd");
+#     elif n==3:
+#         print(f"{n}rd");
+
+
+
+## Dictionary ##
+
+# alien_0={'color':'green','points':5}
+# print(alien_0['color'])
+# print(alien_0['points'])
+
+
+# new_point=alien_0['points']
+# print(f"you just earned {new_point} points!")
+
+# alien_0['x_position']=0
+# alien_0['y_position']=25
+# print(alien_0)
+
+# alien_0={}
+# alien_0['color']='green'
+# alien_0['points']=5
+# print(alien_0)
+
+# alien_0['color']='yellow'
+# print(alien_0)
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+## Dictionary ##
+
+
+# alien_0={'color':'green','points':5}
+# print(alien_0['color'])
+# print(alien_0['points'])
+
+
+# new_point=alien_0['points']
+# print(f"you just earned {new_point} points!")
+
+# alien_0['x_position']=0
+# alien_0['y_position']=25
+# print(alien_0)
+
+# alien_0={}
+# alien_0['color']='green'
+# alien_0['points']=5
+# print(alien_0)
+
+# alien_0['color']='yellow'
+# print(alien_0)
+
+
+
+# alien_0={'x_position':0,'y_position':25,'speed':'medium'}
+# print(f"original position:{alien_0['x_position']}")
+
+# if alien_0['speed']=='slow':
+#     x_increment=1
+# elif alien_0['speed']=='medium':
+#     x_increment=2
+# else:
+#     x_increment=3
+
+# alien_0['x_position']=alien_0['x_position']+x_increment
+# print(f"new position:{alien_0['x_position']}")
+
+
+# alien_0={'color':'green','points':5}
+# print(alien_0)
+
+# del alien_0['points']
+# print(alien_0)
+
+
+##Dictionary of similar objects:::
+
+# favourite_language={
+#     'jen':'python',
+#     'sarah':'c',
+#     'edward':'ruby',
+#     'phill':'python',
+# }
+# print(favourite_language)
+# language=favourite_language['sarah'].title()
+# print(f"sarah's favourite language is {language}")
+
+
+
+## using get() to access values::
+# alien_0={'color':'green','speed':'medium'}
+
+# point_value=alien_0.get('points','no point value assigned.')
+# print(point_value)
+
+
+# info={'first_name':'alice','last_name':'mathew','age':36,'city':'california'}
+
+# for value in info:
+#     print(info[value])
+
+
+# favourite_nums={'alice':111,'kim':212,'mickey':333,'jordan':999,'husky':4545}
+
+# for i in favourite_nums:
+#     print(i,favourite_nums[i])
+
+
+# glossary={'mutuable':'means changable','immutable':'means not changable',
+#     'reverse':'used to reverse the list','sort':'used to sort the list permanently'
+# }
+
+# for i in glossary:
+#     print(f"{i}:\n{glossary[i]}\n")
+
+
+
+### Looping through all key-value pairs:::
+
+# user_0={
+#     'username':'efermi',
+#     'first':'enrico',
+#     'last':'fermi'
+# }
+
+# for key, value in user_0.items():
+#     print(f"key:{key.title()}")
+#     print(f"value:{value.title()}\n")
+
+
+# favourite_language={
+#     'jen':'python',
+#     'sarah':'c',
+#     'edward':'ruby',
+#     'phill':'python',
+# }
+
+# for name in favourite_language.keys():
+#     print(name.title())
+
+# favourite_language={
+#     'jen':'python',
+#     'sarah':'c',
+#     'edward':'ruby',
+#     'phill':'python',
+# }
+
+# for name in sorted(favourite_language.keys()):
+#     print(name.title())
+
+# for value in favourite_language.values():
+#     print(value)
+
+#by using set the repetiting values will not seen. 
+# for value in set(favourite_language.values()): 
+#     print(value)
+
+# rivers={'nile':'egypt','ganga':'india','danube':'europe'}
+
+# for key,value in rivers.items():
+#     print(f"{key.title()} runs through {value}.")
+
+# alien_0={'color':'green','points':5}
+# alien_1={'color':'yellow','points':10}
+# alien_2={'color':'red','points':15}
+
+# aliens=[alien_0,alien_1,alien_2]
+
+# for alien in aliens:
+#     print(alien)
+
+
+# aliens=[]
+# for alien_number in range(30):
+#     new_alien={'color':'green','points':5,'speed':'slow'}
+#     aliens.append(new_alien)
+
+# for alien in aliens[:5]:
+#     print(alien)
+# print("...")
+# print(len(aliens))
+
+# pizza={
+#     'crust':'thick',
+#     'toppings':['mushrooms','extra cheese']
+# }
+# print(pizza['crust'],pizza['toppings'])
+
+# for topping in pizza['toppings']:
+#     print(topping)
+
+
+## list in a Dictionary##
+
+# favourite_language={
+#     'jen':['python','ruby'],
+#     'sarah':['c'],
+#     'edward':['ruby','go'],
+#     'phil':['python','haskell']
+# }
+
+# for name, languages in favourite_language.items():
+#     print(f"{name.title()}'s favourite languages are::")
+#     for language in languages:
+#         print(f"{language.title()}")
+
+
+## a Dictionary in a Dictionary ##
+
+# users={
+#     'aeintein':{
+#         'first':'albert',
+#         'last':'einstein',
+#         'location':'princeton'
+#     },
+#     'mcurie':{
+#         'first':'marie',
+#         'last':'curie',
+#         'location':'paris'
+#     }
+# }
+
+# for username,user_info in users.items():
+#     print(f"username: {username}")
+#     full_name=f"{user_info['first']} {user_info['last']}"
+#     location=user_info['location']
+    
+#     print(f"full name:{full_name.title()}")
+#     print(f"location:{location.title()}")
+    
+
+# dog={
+#     'name':'bruno',
+#     'breed':'labra',
+#     'age':'6 months',
+#     'color':'black',
+# }
+# cat={
+#     'name':'kitty',
+#     'breed':'persian',
+#     'age':'7 months',
+#     'color':'grey'
+# }
+# horse={
+#     'name':'stiphen',
+#     'breed':'marwari',
+#     'age':'5 yrs',
+#     'color':'black'
+# }
+
+# pets=[dog,cat,horse]
+
+# for pet in pets:
+#     print(pet)
+
+
+# dog={
+#     'name':'bruno',
+#     'breed':'labra',
+#     'age':'6 months',
+#     'color':'black',
+# }
+# cat={
+#     'name':'kitty',
+#     'breed':'persian',
+#     'age':'7 months',
+#     'color':'grey'
+# }
+# horse={
+#     'name':'stiphen',
+#     'breed':'marwari',
+#     'age':'5 yrs',
+#     'color':'black'
+# }
+# dog['name']='mike'
+
+# pets=[dog,cat,horse]
+
+# for pet in pets:
+#     print(pet)
+
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+### Dictionary practice:::
+
+# person={
+#     'name':'amit',
+#     'age':30,
+#     'city':'pune'
+# }
+
+
+# for key in person:
+#     print(key)
+# for value in person.values():
+#     print(value)
+# for key,value in person.items():
+#     print(key,"->",value)
+
+
+# if 'salary' in person:
+#     print("salary exists")
+# else:
+#     print("salary is not exists")
+
+
+# person['salary']=50000
+# person['age']=31
+# del person['city']
+
+# print(person)
+
+
+# person={
+#     'name':'amit',
+#     'age':30,
+#     'salary':50000,
+# }
+
+# print(person.get('salary'))
+# print(person.get('department'))
+# print(person.get('department','IT'))
+
+
+# scores={
+#     'math':80,
+#     'science':70
+# }
+
+# scores['math']=scores.get('math',0)+5
+# scores['english']=scores.get('english',0)+10
+# print(scores)
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+### Nested Dictionary ###
+
+
+# employee={
+#     'amit':{
+#         'dept':'HR',
+#         'salary':50000
+#     },
+#     'ravi':{
+#         'dept':'IT',
+#         'salary':60000
+#     }
+# }
+
+# print(employee['amit']['dept'])
+# for name, details in employee.items():
+#     print(name)
+#     print("department:",details['dept'])
+#     print('salary:',details['salary'])
+
+
+# students={
+#     'rahul':{'math':80,'science':70},
+#     'anita':{'math':90,'science':85},
+#     'vikas':{'math':75,'science':60}
+# }
+
+# for name,marks in students.items():
+#     print(name)
+#     math=marks['math']
+#     science=marks['science']
+#     print(f"maths marks:{math}\nscience marks:{science}")
+#     print(f"average marks:{(math+science)/2}\n")
+
+
+#### print a Dictionary in reverse order (end key-value to frist key-value pair)
+
+# data={
+#     'a':1,
+#     'b':2,
+#     'c':3,
+#     'd':4
+# }
+# print(data)
+# for key in reversed(list(data.keys())):
+#     print(key,"->",data[key])
+
+# person = {
+#     'name': 'Amit',
+#     'age': 30,
+#     'city': 'Pune',
+#     'salary': 50000
+# }
+# items=list(person.items())
+# print(items)
+
+# for key,value in reversed(items):
+#     print(key,"->",value)
+
+
+
+#### lists + Dictionary ####
+
+# employees=[
+#     {'name':'amit','dept':'HR','salary':50000},
+#     {'name':'ravi','dept':'IT','salary':60000},
+#     {'name':'neha','dept':'finance','salary':55000}
+# ]
+
+# for emp in employees:
+#     name=emp['name']
+#     department=emp['dept']
+#     salary=emp['salary']
+#     print(f"{name}\ndepartment:{department}\nsalary:{salary}\n")
+
+
+#p-1>. Print only employees whose salary is greater than 55,000
+
+# employees=[
+#     {'name':'amit','dept':'HR','salary':50000},
+#     {'name':'ravi','dept':'IT','salary':60000},
+#     {'name':'neha','dept':'finance','salary':55000},
+#     {'name':'sam','dep':'HR','salary':50000},
+#     {'name':'kitty','dep':'IT','salary':65000}
+# ]
+
+# for emp in employees:
+#     if emp['salary']>55000:
+#         print(emp['name'])
+
+
+#p-2>. Group employees by department
+
+# employees=[
+#     {'name':'amit','dept':'HR','salary':50000},
+#     {'name':'ravi','dept':'IT','salary':60000},
+#     {'name':'neha','dept':'finance','salary':55000},
+#     {'name':'sam','dept':'HR','salary':50000},
+#     {'name':'kitty','dept':'IT','salary':65000}
+# ]
+
+# dict_emp={}
+# for emp in employees:
+#     if emp['dept'] in dict_emp:
+#         dict_emp[emp['dept']].append(emp['name'])
+#     else:
+#         dict_emp[emp['dept']]=[emp['name']]
+
+# for emp in employees:
+#     dict_emp[emp['dept']]=dict_emp.get(emp['dept'],[])+[emp['name']]
+
+# print(dict_emp)
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+### user input a nd while loops ###
+
+
+# message=input("tell me something, and I will repeat it back to you: ")
+# print(message)
+
+
+# name=input("please enter your name: ")
+# print(f"hello, {name}!")
+
+
+# prompt='If you tell us who you are, we can personalize the message you see.'
+# prompt+="\nwaht is your first name?"
+
+# name=input(prompt)
+# print(f"hello,{name}!")
+
+
+# age=int(input('enter your age: '))
+# if age > 18:
+#     print(f"eligible age {age}")
+# else:
+#     print(f"{age} is not an eligible age.")
+
+
+# message=input("what kind of rental car they would like. ")
+# print(f"Let me see if I can find you a {message}")
+
+
+# message=int(input("how many people are in their dinner group. "))
+
+# if message >8:
+#     print("They’ll have to wait for a table.")
+# else:
+#     print("Their table is ready.")
+
+
+# number=int(input("enter a number. "))
+# if number%10==0:
+#     print(f"it is multiple of 10")
+# else:
+#     print(f"not a multiple of 10")
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+### Introducing while loops ###
+
+# current_number=1
+# while current_number <= 5:
+#     print(current_number)
+#     current_number+=1
+
+# prompt="Tell me something, and I will repeat it back to you:"
+# prompt+="\n Enter 'quit' to end the program."
+
+# message=""
+# while message != 'quit':
+#     message=input(prompt)
+#     print(message)
+
+
+
+# prompt="Tell me something, and I will repeat it back to you:"
+# prompt+="\n Enter 'quit' to end the program."
+
+# active=True
+# while active:
+#     message=input(prompt)
+#     if message == 'quit':
+#         active = False
+#     else:
+#         print(message)
+
+
+
+### using beak to exit a loop ###
+
+# prompt="please enter the name of a city you have visited:"
+# prompt+="\n Enter 'quit' when you are finished."
+
+# while True:
+#     city=input(prompt)
+    
+#     if city == 'quit':
+#         break
+#     else:
+#         print(f"I'd love to go {city.title()}")
+  
+    
+### using continue in a loop ###
+
+
+# current_number=0
+# while current_number < 10:
+#     current_number+=1
+#     if current_number%2 == 0:
+#         continue
+    
+#     print(current_number)
+    
+
+
+
+# prompt='please enter your pizza toppings:'
+# prompt+='\nenter quit to submit: '
+
+# flag=True
+
+# while flag:
+#     message=input(prompt)
+    
+#     if message == 'quit':
+#         flag=False
+#     else:
+#         print(f"you added {message} for you pizza.")
+        
+
+
+# prompt="please enter your age for the ticket:: "
+
+# age=int(input(prompt))
+
+# while age:
+#     price=0
+#     if age < 3:
+#         print("you are free:")
+#         break
+#     elif age < 12:
+#         print("charge is $10:")
+#         break
+#     else:
+#         print("charge is $15")
+#         break
+      
+
+
+### using a while loop with lists and Dictionaries ###
+
+# unconfirmed_users=['alice','brian','candace']
+# confirmed_users=[]
+
+# while unconfirmed_users:
+#     current_user=unconfirmed_users.pop()
+    
+#     print(f"verified user:: {current_user.title()}")
+#     confirmed_users.append(current_user)
+
+# print(confirmed_users)    
+
+
+### Removing all isinstances of specific values from a list ###
+
+# pets=['dog','cat','dog','goldfish','cat','rabbit','cat']
+# print(pets)
+
+# while 'cat' in pets:
+#     pets.remove('cat')
+
+# print(pets)    
+
+
+
+### filling a Dictionary with user input ###
+
+# responses={}
+# polling_active=True
+
+# while polling_active:
+#     name=input("what is your name? ")
+#     response=input("\nwhich mountain would you like to climb someday? ")
+#     responses[name]=response
+    
+#     repeat=input("would you like to let another person respond?(yes/no) ")
+#     if repeat == 'no':
+#         polling_active=False
+# print("....polling results....")
+# for name, response in responses.items():
+#     print(f"{name.title()} would you like to climb {response.title()}.")
+
+# print(responses)
+
+
+# sandwich_orders=['paneer','corn','vegies','soyachaap','extrachees']
+
+# finished_sandwiches=[]
+
+# while sandwich_orders:
+#     san=sandwich_orders.pop()
+#     print(f"I made your {san} sandwich.")
+#     finished_sandwiches.append(san)
+
+# print(finished_sandwiches)    
+    
+
+# sandwich_orders=['paneer','pastrami','corn','pastrami','vegies','soyachaap','pastrami','extrachees','pastrami']
+
+# print("deli has ran out of pastrami")
+# while 'pastrami' in sandwich_orders:
+#     sandwich_orders.remove('pastrami')
+
+# print(sandwich_orders)    
+
+
+
+# dream_vacation={}
+# polling_active=True
+
+# while polling_active:
+#     name=input("enter you name: ")
+#     dream_dest=input("enter you dream destination:: ")
+#     dream_vacation[name]=dream_dest
+    
+#     next=input("Do want to allow other users here?(yes/no):: ")
+#     if next == 'no':
+#         polling_active=False
+
+# for name,vacation in dream_vacation.items():
+#     print(f"{name.title()} dream destination is {vacation.title()}.")
+
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+### functions ###
+
+
+# def greet_user():
+#     print('hello')
+# greet_user()    
+
+
+# def greet_user(username):
+#     print(f"hello,{username.title()}!")
+# greet_user('jesse')    
+
+
+# def display_message():
+#     print("What are you learning about in this chapter?")
+# display_message()    
+
+
+# def favourite_book(title):
+#     print(f"{title.title()} is one of my favourite book.")
+# favourite_book('flesh')    
+
+
+# def describe_pet(animal_type,pet_name):
+#     print(f"I have a {animal_type}.")
+#     print(f"My {animal_type}'s name is {pet_name.title()}.")
+# describe_pet('hamster','harry')
+# describe_pet('dog','willie')
+
+
+
+# def describe_pet(animal_type,pet_name):
+#     print(f"I have a {animal_type}.")
+#     print(f"My {animal_type}'s name is {pet_name.title()}.")
+# describe_pet(animal_type='hamster',pet_name='harry')
+
+
+
+# def describe_pet(pet_name='tom',animal_type='dog'):
+#     print(f"I have a {animal_type}.")
+#     print(f"My {animal_type}'s name is {pet_name.title()}.")
+# describe_pet(pet_name='harry')
+
+
+# def add(a,b):
+#     return a+b
+
+# result=add(4,5)
+# print(result)
+
+
+# def subtract(a,b):
+#     return a-b
+# res=subtract(10,3)
+# print(res)
+        
+
+# def greet(name):
+#     print(f"Welcome {name.title()}.")
+# greet('ram')    
+
+
+# def func_name(num):
+#     print("first element of the list:",num[0])
+#     print("length of the list:",len(num))
+
+# nums=[1,2,3,4]
+
+# func_name(nums)
+
+
+# def summation(num):
+#     total=0
+#     for item in num:
+#         total+=item
+#     return total    
+
+# nums=[1,2,3,4,5]
+
+# result=summation(nums)
+# print(result)
+
+
+# def max_num(num):
+#     max_number=num[0]
+#     i=1
+#     while i < len(num):
+#         if num[i] > max_number:
+#             max_number=num[i]
+#         i+=1    
+    
+#     return max_number        
+
+# nums=[1,2,5,4,3]
+
+# result=max_num(nums)
+# print(result)
+
+
+
+# def feq_dict(num):
+#     f_dict={}
+#     for item in num:
+#         f_dict[item]=f_dict.get(item,0)+1
+#     return f_dict    
+
+# nums=[1,2,1,3,2,1]
+# output=feq_dict(nums)
+# print(output)
+
+
+# def char_count_dict(word):
+#     c_dict={}
+#     for i in word:
+#         c_dict[i]=c_dict.get(i,0)+1
+#     return c_dict    
+
+# word="hello"
+# result=char_count_dict(word)
+# print(result)
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+# def make_shirt(size,message):
+#     print(f"The size of the tshirt is {size}\n and message to print on it is {message}.")
+
+# size=int(input("enter you tshirt size: "))
+# message=input("enter message to print on the tshirt: ")
+
+# make_shirt(size,message)
+
+# def city_country(city,country):
+#     print(f"{city.title()},{country.title()}")
+
+
+# city_name=input("enter a  city name: ")
+# country_name=input("enter a country name: ")
+# city_country(city_name,country_name)
+
+
+# def print_func(message):
+#     for item in message:
+#         print(item)
+
+
+# message=['hi all','how are you','where are you','pelase come']
+# print_func(message)
+
+
+
+# def print_func(message):
+#     send_msg=[]
+#     while message:
+#         msg=message.pop()
+#         send_msg.append(msg)
+    
+#     return send_msg    
+
+
+# message=['hi all','how are you','where are you','pelase come']
+# print(print_func(message))
+
+
+### passing an arbitrary number of arguments ###
+
+
+# def make_pizza(*toppings):
+#     print((toppings))
+
+# make_pizza('pepperoni')
+# make_pizza('mushrooms','green peppers','extra cheese')
+
+
+
+# def make_pizza(*toppings):
+#     print("\nMaking a pizza with the following toppings: ")
+#     for topping in toppings:
+#         print(f"-{topping}")
+
+# make_pizza('pepperoni')
+# make_pizza('mushrooms','green peppers','extra cheese')
+
+
+
+### mixing Positional and Arbitrary arguments ###
+
+
+# def make_pizza(size,*toppings):
+#     print(f"\nMaking a {size}-inch pizza with the following toppings: ")
+#     for topping in toppings:
+#         print(f"-{topping}")
+
+# make_pizza(16,'pepperoni')
+# make_pizza(12,'mushrooms','green peppers','extra cheese')
+
+
+
+### using Arbitrary keyword arguments ###
+
+
+# def build_profile(first,last,**user_info):
+#     user_info['first_name']=first
+#     user_info['last_name']=last
+#     return user_info
+
+# user_profile=build_profile('albert','einstein',location='princeton',field='physics')
+# print(user_profile)
+
+
+#practice::1
+# def make_sandwich(*type):
+#     for sandwich in type:
+#         print(f"making {sandwich} sandwich")
+    
+# make_sandwich('paneer')
+# make_sandwich('corn','vegetable')
+# make_sandwich('extra cheese','grilled paneer','vegetable')
+
+
+#practice::2
+# def build_profile(first,last,**info):
+#     info['first_name']=first
+#     info['last_name']=last
+#     return info
+
+# user_profile=build_profile('sam','cornie',location='amsterdam',field='developer')
+# print(user_profile)
+
+
+
+#practice::2
+# def make_car(manufacturer,model,**car_info):
+#     car_info['manufacturer']=manufacturer
+#     car_info['model_name']=model
+    
+#     return car_info
+
+# car=make_car('subaru','outback',color='blue',tow_package=True)
+# print(car)
+
+
+
+### storing you function in modules ###
+
+
+# import pizza #(pizza is a module which contains make_pizza function and 
+# #              it is of .py extension)
+
+# pizza.make_pizza(16,'pepperoni') 
+# #(this is how we call the function written in the module)
+
+
+### importing specific functions ###
+
+# from pizza import make_pizza 
+# # by this way we can import specific function from the module only!!
+
+# from module_name import func1,func2
+
+
+### using as to give a function an alias ###
+
+# from pizza import make_pizza as mp
+
+# mp(16,'pepperoni')
+
+
+### using as to give a module an alias ##
+
+# import pizza as p
+
+# p.make_pizza(16,'pepperoni')
+
+### importing all functions in a module ###
+
+# from pizza import *
+# make_pizza(16,'pepperoni')
+
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+### classes ###
+
+# class Dog:
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+    
+#     def sit(self):
+#         print(f"{self.name} is now sitting.")
+    
+#     def roll_over(self):
+#         print(f"{self.name} rolled over!")
+    
+# my_dog=Dog('willie',6)
+# your_dog=Dog('lucy',3)
+
+# print(f"my dog's name is {my_dog.name}.")
+# print(f"my dog is {my_dog.age} years old.")
+# my_dog.sit()
+
+# print(f"my dog's name is {your_dog.name}.")
+# print(f"my dog is {your_dog.age} years old.")
+# your_dog.sit()
+
+
+# class Restaurant:
+#     def __init__(self,res_name,cuisine_type):
+#         self.res_name=res_name
+#         self.cuisine_type=cuisine_type
+    
+#     def describe_restaurant(self):
+#         print(f"The restaurant name {self.res_name} based on Rajasthan.")
+#         print(f"It's famous for the special {self.cuisine_type}.")
+    
+#     def open_restaurant(self):
+#         print(f"{self.res_name.title()} is open.")
+    
+# party=Restaurant('chokhi dhani','dal-baati_churma')
+
+# print(party.res_name.title())
+# print(party.cuisine_type.title())
+
+# party.describe_restaurant()
+# party.open_restaurant()
+
+# party2=Restaurant('punjabi_dhaba','handi_chola')
+# party3=Restaurant('janta','rasmalai')
+
+# party2.describe_restaurant()
+# party3.describe_restaurant()
+
+
+# class User:
+#     def __init__(self,first_name,last_name):
+#         self.first_name=first_name
+#         self.last_name=last_name
+#     def describe_user(self):
+#         print(f"{self.first_name.title()} {self.last_name.title()} is from HR department from last 5-years.")
+
+#     def greet_user(self):
+#         print(f"Good morning {self.first_name.title()}")
+    
+# profile1=User('tom','cruise')
+# profile2=User('emmanuel','macron')
+
+# profile1.describe_user()
+# profile1.greet_user()
+
+# profile2.describe_user()
+# profile2.greet_user()
+
+
+
+### working with CLasses and Instances ###
+
+# class Car:
+#     def __init__(self,make,model,year):
+#         self.make=make
+#         self.model=model
+#         self.year=year
+#         self.odometer_reading=0
+    
+#     def get_descriptive_name(self):
+#         long_name=f"{self.year} {self.make} {self.model}"
+#         return long_name.title()
+    
+#     def read_odometer(self):
+#         print(f"this car has {self.odometer_reading} miles on it.")
+        
+# my_new_car=Car('audi','a4',2019)
+# print(my_new_car.get_descriptive_name())
+# my_new_car.read_odometer()
+
+
+
+### modifying attribute values ### 
+
+
+# class Car:
+#     def __init__(self,make,model,year):
+#         self.make=make
+#         self.model=model
+#         self.year=year
+#         self.odometer_reading=0
+    
+#     def get_descriptive_name(self):
+#         long_name=f"{self.year} {self.make} {self.model}"
+#         return long_name.title()
+    
+#     def read_odometer(self):
+#         print(f"this car has {self.odometer_reading} miles on it.")
+    
+#     def update_odometer(self,mileage):
+#         if mileage>=self.odometer_reading:
+#             self.odometer_reading=mileage
+#         else:
+#             print("you can't roll back an odometer!")
+#     def increment_odometer(self,miles):
+#         self.odometer_reading += miles
+        
+
+# my_new_car=Car('audi','a4',2019)
+# print(my_new_car.get_descriptive_name())
+# my_new_car.odometer_reading=23
+
+# my_new_car.update_odometer(34)
+# my_new_car.read_odometer()
+
+# my_used_car=Car('suburu','outback',2015)
+# print(my_used_car.get_descriptive_name())
+
+# my_used_car.update_odometer(23_500)
+# my_used_car.read_odometer()
+
+
+# my_used_car.increment_odometer(100)
+# my_used_car.read_odometer()
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+# self service BI
+# mirroring of data from other data storage to onelake
+
+
+# class User:
+#     def __init__(self,first_name,last_name):
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.department=None
+#         self.experience=0
+#         self.login_attempts=0
+    
+#     def describe_user(self):
+#         print("details about the user:\n")
+#         print(f"first name: {self.first_name}\nlast name: {self.last_name}")
+#         print(f"department {self.department}\nexperience: {self.experience}")
+    
+#     def greet_user(self):
+#         print(f"\nHi,{self.first_name}")
+        
+#     def increment_login_attempts(self):
+#         self.login_attempts+=1
+#         print(f"login_attempts: {self.login_attempts}")
+    
+#     def reset_login_attempts(self):
+#         self.login_attempts=0
+#         return self.login_attempts
+        
+        
+
+# user1=User('mohit','solanki')
+# user1.describe_user()
+# user1.greet_user()
+
+# user1.increment_login_attempts()
+# user1.increment_login_attempts()
+# user1.increment_login_attempts()
+# user1.increment_login_attempts()
+
+# print(user1.reset_login_attempts())
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+### inheritance ###
+
+# class Car:
+#     def __init__(self,make,model,year):
+#         self.make=make
+#         self.model=model
+#         self.year=year
+#         self.odometer_reading=0
+    
+#     def get_descriptive_name(self):
+#         long_name=f"{self.year} {self.make} {self.model}"
+#         return long_name.title()
+    
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer_reading} miles on it.")
+        
+#     def update_odometer(self,mileage):
+#         if mileage >= self.odometer_reading:
+#             self.odometer_reading=mileage
+#         else:
+#             print("you can't roll back an odometer!")
+    
+#     def increment_odometer(self,miles):
+#         self.odometer_reading+=miles
+
+
+# class ElectricCar(Car):
+    
+#     def __init__(self,make,model,year):
+#         super().__init__(make,model,year)
+
+
+# my_tesla=ElectricCar('tesla','model s',2019)
+# print(my_tesla.get_descriptive_name())
+        
+
+
+### defining attributes and methods for the child class ###
+
+# class Car:
+#     def __init__(self,make,model,year):
+#         self.make=make
+#         self.model=model
+#         self.year=year
+#         self.odometer_reading=0
+    
+#     def get_descriptive_name(self):
+#         long_name=f"{self.year} {self.make} {self.model}"
+#         return long_name.title()
+    
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer_reading} miles on it.")
+        
+#     def update_odometer(self,mileage):
+#         if mileage >= self.odometer_reading:
+#             self.odometer_reading=mileage
+#         else:
+#             print("you can't roll back an odometer!")
+    
+#     def increment_odometer(self,miles):
+#         self.odometer_reading+=miles
+
+
+# class ElectricCar(Car):
+    
+#     def __init__(self,make,model,year):
+#         super().__init__(make,model,year)
+#         self.battery_size=75
+    
+#     def describe_battery(self):
+#         print(f"This car has a {self.battery_size}-kwh battery.")
+
+
+# my_tesla=ElectricCar('tesla','model s',2019)
+# print(my_tesla.get_descriptive_name())
+# my_tesla.describe_battery()
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+### overriding methods from the parent class ###
+
+
+# class Car:
+#     def __init__(self,make,model,year):
+#         self.make=make
+#         self.model=model
+#         self.year=year
+#         self.odometer_reading=0
+    
+#     def get_descriptive_name(self):
+#         long_name=f"{self.year} {self.make} {self.model}"
+#         return long_name.title()
+    
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer_reading} miles on it.")
+        
+#     def update_odometer(self,mileage):
+#         if mileage >= self.odometer_reading:
+#             self.odometer_reading=mileage
+#         else:
+#             print("you can't roll back an odometer!")
+    
+#     def increment_odometer(self,miles):
+#         self.odometer_reading+=miles
+
+
+# class ElectricCar(Car):
+    
+#     def __init__(self,make,model,year):
+#         super().__init__(make,model,year)
+#         self.battery_size=75
+    
+#     def describe_battery(self):
+#         print(f"This car has a {self.battery_size}-kwh battery.")
+    
+#     def fill_gas_tank(self):
+#         print("This car doesn't need a gas tank!")
+        
+
+# my_tesla=ElectricCar('tesla','model s',2019)
+# print(my_tesla.get_descriptive_name())
+# my_tesla.describe_battery()
+# my_tesla.fill_gas_tank()
+
+
+
+### instances as attributes ###
+
+
+# class Car:
+#     def __init__(self,make,model,year):
+#         self.make=make
+#         self.model=model
+#         self.year=year
+#         self.odometer_reading=0
+    
+#     def get_descriptive_name(self):
+#         long_name=f"{self.year} {self.make} {self.model}"
+#         return long_name.title()
+    
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer_reading} miles on it.")
+        
+#     def update_odometer(self,mileage):
+#         if mileage >= self.odometer_reading:
+#             self.odometer_reading=mileage
+#         else:
+#             print("you can't roll back an odometer!")
+    
+#     def increment_odometer(self,miles):
+#         self.odometer_reading+=miles
+
+# class Battery:
+#     def __init__(self,battery_size=75):
+#         self.battery_size=battery_size
+    
+#     def describe_battery(self):
+#         print(f"This car has {self.battery_size}-kwh battery.")
+    
+#     def get_range(self):
+#         if self.battery_size == 75:
+#             range=260
+#         elif self.battery_size == 100:
+#             range=315
+        
+#         print(f"This car can go about {range} miles on a full charge.")
+        
+
+
+# class ElectricCar(Car):
+    
+#     def __init__(self,make,model,year):
+#         super().__init__(make,model,year)
+#         self.battery=Battery()
+    
+#     def fill_gas_tank(self):
+#         print("This car doesn't need a gas tank!")
+        
+
+# my_tesla=ElectricCar('tesla','model s',2019)
+# print(my_tesla.get_descriptive_name())
+# my_tesla.battery.describe_battery()
+# my_tesla.battery.get_range()
+
+
+
+### importing classes ###
+
+# we make a module that contains the Car class and save that modeul with the name car.py
+
+# from car import Car
+
+# my_new_car=Car('audi','a4',2019)
+# print(my_new_car.get_descriptive_name())
+
+# my_new_car.odometer_reading=23
+# my_new_car.read_odometer()
+
+
+### import multiple classes from a module ###
+
+# from car import Car,ElectricCar
+
+
+### the python standard library ###
+
+# here we are importing randint() function from the random module in python
+# this function geneates random value in between (1,6)
+
+# from random import randint
+# print(randint(1,6))
+
+
+# another useful function from random module is choice(), this functiontakes in a list
+# or tuple nad returns a randomly chosen element:
+
+# from random import choice
+# players=['charles','martina','michael','florence','eli']
+# first_up=choice(players)
+# print(first_up)
+
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+### Oops in python ###
+
+
+# class Employee:
+#     pass
+
+# emp1=Employee()
+# print(type(emp1))
+
+
+
+
+# Class Employee:
+#     def __init__(self,name,age,salary):
+#         self.nmae=name
+#         self.age=age
+#         self.salary=salary
+        
+
+
+# class Student:
+#     def __init__(self,name,roll_no):
+#         self.name=name
+#         self.roll_no=roll_no
+        
+#     def display(self):
+#         print("name:",self.name)
+#         print("roll_no:",self.roll_no)
+#     def update_roll(self,new_roll):
+#         self.roll_no=new_roll
+        
+# s1=Student("Rahul",101)
+# s1.display()
+# s1.update_roll(202)
+# s1.display()
+
+
+
+# class Student:
+#     college='ABC college'
+    
+#     def __init__(self,name,roll_no):
+#         self.name=name
+#         self.roll_no=roll_no
+        
+#     def display(self):
+#         print("name:",self.name)
+#         print("roll_no:",self.roll_no)
+#     def update_roll(self,new_roll):
+#         self.roll_no=new_roll
+        
+# s1=Student('rahul',101)
+# s2=Student('amit',102)
+
+# print(s1.college)
+# print(s2.college)
+
+
+
+# class Student:
+#     college='ABC college'
+#     school='Delhi Public School'
+    
+#     def __init__(self,name,roll_no):
+#         self.name=name
+#         self.roll_no=roll_no
+        
+#     def display(self):
+#         print("name:",self.name)
+#         print("roll_no:",self.roll_no)
+#     def update_roll(self,new_roll):
+#         self.roll_no=new_roll
+        
+# s1=Student('rahul',101)
+# s2=Student('amit',102)
+
+# print(s1.school)
+# print(s2.school)
+
+# Student.school='Santt merry School'
+
+# print(s1.school)
+# print(s2.school)
+
+
+
+
+# class BankAccount:
+#     def __init__(self,owner,balance):
+#         self.owner=owner
+#         self.__balance=balance
+        
+#     def deposite(self,amount):
+#         if amount > 0:
+#             self.__balance+=amount
+    
+#     def get_balance(self):
+#         return self.__balance
+
+# acc=BankAccount('amit',1000)
+# print(acc.get_balance())
+
+
+
+# class Employee:
+#     def __init__(self,name,salary):
+#         self.name=name
+#         self.__salary=salary
+    
+#     def set_salary(self,amount):
+#         self.__salary=amount
+        
+#     def get_salary(self):
+#         return self.__salary
+
+# e1=Employee('neha',50000)
+# print(e1.get_salary())
+
+        
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+### inheritance ###
+
+# class Employee:
+#     def __init__(self,name,salary):
+#         self.name=name
+#         self.salary=salary
+        
+#     def display(self):
+#         print('Name:',self.name)
+#         print('Salary:',self.salary)
+
+# class Manager(Employee):
+#     def __init__(self,name,salary,team_size):
+#         super().__init__(name,salary)
+#         self.team_size=team_size
+    
+#     def display_manager(self):
+#         self.display()
+#         print("Team size:",self.team_size)
+
+# m1=Manager('amit',80000,10)
+# m1.display_manager()
+
+    
+# class Vehicle:
+#     def __init__(self,brand,speed):
+#         self.brand=brand
+#         self.speed=speed
+    
+#     def display_info(self):
+#         print("Brand:",self.brand)
+#         print("Speed:",self.speed)
+
+# class Car(Vehicle):
+#     def __init__(self,brand,speed,fuel_type):
+#         super().__init__(brand,speed)
+#         self.fuel_type=fuel_type
+    
+#     def display_info(self):   #Method overriding
+#         super().display_info()
+#         print("fuel type:",self.fuel_type)
+        
+# c1=Car('toyota',120,'petrol')
+# c1.display_info()
+      
+        
+
+### polymorphism ###
+
+#1. Method Overriding ::::
+
+# class Animal:
+#     def sound(self):
+#         print("animal makes a sound")
+
+# class Dog(Animal):
+#     def sound(self):
+#         print("Dog barks")
+
+# class Cat(Animal):
+#     def sound(self):
+#         print("Cat meows")
+
+# animals=[Dog(),Cat(),Animal()]
+# for a in animals:
+#     a.sound()
+
+
+#2. Duck typing ::::
+
+# class Car:
+#     def drive(self):
+#         print('car is driving')
+
+# class Bike:
+#     def drive(self):
+#         print('Bike is riding')
+
+# def start_vehicle(vehicle):
+#     vehicle.drive()
+
+
+# start_vehicle(Car())
+# start_vehicle(Bike())
+    
+
+
+#3. Operator Overloading ::::
+
+# print(9+3)
+# print("hi" + "bye")
+# print([1,2] + [3,4])
+
+
+
+# import random 
+
+# class Die:
+#     def __init__(self,side=6):
+#         self.side=side
+    
+#     def roll_die(self):
+#         print("side:",random.randint(1,self.side))
+
+
+# dice=Die()
+
+# for item in range(1,7):
+#     dice.roll_die()
+    
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
