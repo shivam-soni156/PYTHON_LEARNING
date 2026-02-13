@@ -2441,6 +2441,9 @@
 # for a in animals:
 #     a.sound()
 
+#see here we have same method name but different behaviour so python decides at runtime
+#which method to call
+
 
 #2. Duck typing ::::
 
